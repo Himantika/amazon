@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180907 18:15:14.358" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\development\robot scripts\amazon\tests\amazon.robot" id="s1" name="Amazon">
+<test id="s1-t1" name="User should not be required to sign in">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180907 18:15:14.967" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" endtime="20180907 18:15:30.103" starttime="20180907 18:15:14.966"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180907 18:15:33.105" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180907 18:15:33.105" starttime="20180907 18:15:30.105"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>twotabsearchtextbox</arg>
+<arg>Ferrari 458 maisto</arg>
+</arguments>
+<msg timestamp="20180907 18:15:33.110" level="INFO">Typing text 'Ferrari 458 maisto' into text field 'twotabsearchtextbox'.</msg>
+<status status="PASS" endtime="20180907 18:15:35.479" starttime="20180907 18:15:33.109"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180907 18:15:38.480" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180907 18:15:38.480" starttime="20180907 18:15:35.480"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input</arg>
+</arguments>
+<msg timestamp="20180907 18:15:38.482" level="INFO">Clicking button 'css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input'.</msg>
+<status status="PASS" endtime="20180907 18:15:44.340" starttime="20180907 18:15:38.482"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>results for "Ferrari 458 maisto"</arg>
+</arguments>
+<status status="PASS" endtime="20180907 18:15:44.458" starttime="20180907 18:15:44.341"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>css=#result_0 &gt; div &gt; div &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a</arg>
+</arguments>
+<msg timestamp="20180907 18:15:44.460" level="INFO">Clicking link 'css=#result_0 &gt; div &gt; div &gt; div &gt; div.a-fixed-left-grid-col.a-col-right &gt; div.a-row.a-spacing-small &gt; div:nth-child(1) &gt; a'.</msg>
+<status status="PASS" endtime="20180907 18:15:51.770" starttime="20180907 18:15:44.459"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Back to search results</arg>
+</arguments>
+<status status="PASS" endtime="20180907 18:15:54.548" starttime="20180907 18:15:51.773"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=add-to-cart-button</arg>
+</arguments>
+<msg timestamp="20180907 18:15:54.551" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" endtime="20180907 18:15:57.106" starttime="20180907 18:15:54.550"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180907 18:16:00.109" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180907 18:16:00.110" starttime="20180907 18:15:57.108"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Proceed to Checkout(1 item)</arg>
+</arguments>
+<msg timestamp="20180907 18:16:00.112" level="INFO">Clicking link 'Proceed to Checkout(1 item)'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180907 18:16:02.905" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180907 18:16:02.906" starttime="20180907 18:16:02.359"></status>
+</kw>
+<msg timestamp="20180907 18:16:02.916" level="FAIL">Link with locator 'Proceed to Checkout(1 item)' not found.</msg>
+<status status="FAIL" endtime="20180907 18:16:02.916" starttime="20180907 18:16:00.111"></status>
+</kw>
+<doc>This is some basic info about whole test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20180907 18:16:02.917" critical="yes" starttime="20180907 18:15:14.963">Link with locator 'Proceed to Checkout(1 item)' not found.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" endtime="20180907 18:16:02.924" starttime="20180907 18:15:14.370"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Amazon" pass="0">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
