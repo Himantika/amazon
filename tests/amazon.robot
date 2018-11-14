@@ -17,11 +17,9 @@ User should not be required to sign in
     Click Link  css=#result_0 > div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a
     Wait Until Page Contains   Back to search results
     Click Button  id=add-to-cart-button
-    Sleep  3s
-
-
-    Click Link  Proceed to Checkout(1 item)
+    Sleep  2s
 
 
     Close Browser
+    # to run - robot tests/amazon.robot
 
