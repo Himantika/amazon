@@ -21,5 +21,5 @@ User should not be required to sign in
 
 
     Close Browser
-    # to run - robot tests/amazon.robot
+
 
